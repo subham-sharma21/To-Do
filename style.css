@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+::selection {
+  color: #6612ad;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #3498db, #8e44ad);
+  color: #fff;
+  padding: 10%;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.container h1 img {
+  width: 50px;
+}
+
+.container button img {
+  width: 25px;
+  margin-right: 15px;
+}
+.container button {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#9418fd, #571094);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin: 30px 0 20px;
+  cursor: pointer;
+}
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1); /* Scale up slightly */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  min-height: 150px;
+  background: #ffffff;
+  color: #333;
+  padding: 20px;
+  margin: 20px 0;
+  outline: none;
+  border-radius: 5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add transition */
+  animation: pop-up 0.3s ease forwards; /* Add pop-up animation */
+}
+
+.input-box:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.input-box img {
+  width: 25px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  transition: opacity 0.2s ease; /* Add transition for delete icon */
+}
+
+.input-box img:hover {
+  opacity: 0.7; /* Change opacity on hover */
+}
+
+.notes-container {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px; /* Space between notes */
+}
