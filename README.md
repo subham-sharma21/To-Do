@@ -2,6 +2,10 @@
 
 This is a simple notes app built using **HTML**, **CSS**, and **JavaScript**. It allows users to create and manage notes easily.
 
+## Preview
+
+![Preview Image](images/preview.png)
+
 ## 🚀 Getting Started
 
 ### Prerequisites
