@@ -1,6 +1,7 @@
 # 📓 Simple Notes App
 
 This is a simple notes app built using **HTML**, **CSS**, and **JavaScript**. It allows users to create and manage notes easily.
+Click here: [Notes App](https://subham-sharma21.github.io/To-Do/) 
 
 ## 👀 Preview
 
